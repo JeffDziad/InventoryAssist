@@ -1,0 +1,36 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="JeffDziad.InventoryAssist.MainWindow"
+        Title="Inventory Assist"
+        Height="450"
+        Width="450"
+        ResizeMode="NoResize">
+
+    <Grid>
+        <TabControl Margin="0,0,0,50" BorderThickness="0,0,0,0">
+            <TabItem x:Name="ScannerOptions" Header="Scanner Options">
+                <Grid Background="#FFE5E5E5" HorizontalAlignment="Right" Width="444"/>
+            </TabItem>
+            <TabItem x:Name="CopyToSavvyPortal" Header="Copy To SavvyPortal">
+                <Grid Background="#FFE5E5E5" HorizontalAlignment="Right" Width="444"/>
+            </TabItem>
+            <TabItem x:Name="FormatAssetTags" Header="Format Asset Tags">
+                <Grid Background="#FFE5E5E5" HorizontalAlignment="Right" Width="444"/>
+            </TabItem>
+        </TabControl>
+        <Button x:Name="StartStop"
+            Background="Green"
+            Foreground="White"
+            Content="START"
+            Width="100"
+            Height="35"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Click="Button_Click" Margin="0,0,10,10"/>
+        <ComboBox x:Name="CurrentDevice" Margin="118,396,198,17"/>
+        <Label x:Name="CurrentDeviceLabel" Content="Current Device" HorizontalAlignment="Left" Margin="10,396,0,0" VerticalAlignment="Top" Height="31" Width="103"/>
+
+    </Grid>
+
+</Window>
