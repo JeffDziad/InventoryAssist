@@ -24,8 +24,6 @@ namespace JeffDziad.InventoryAssist
         public MainWindow()
         {
             InitializeComponent();
-
-            deviceManager.test();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
